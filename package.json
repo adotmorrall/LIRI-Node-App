@@ -1,0 +1,20 @@
+{
+  "name": "LIRI-Node-App",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adotmorrall/LIRI-Node-App.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adotmorrall/LIRI-Node-App/issues"
+  },
+  "homepage": "https://github.com/adotmorrall/LIRI-Node-App#readme"
+}
