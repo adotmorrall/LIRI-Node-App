@@ -29,7 +29,6 @@ function userQuery(liriCall, userInput) {
 }
 userQuery(liriCall, userInput);
 
-
 // spotify-this-song command
 function getSpotifySong() {
     var song = userInput;
