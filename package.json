@@ -16,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/adotmorrall/LIRI-Node-App/issues"
   },
-  "homepage": "https://github.com/adotmorrall/LIRI-Node-App#readme"
+  "homepage": "https://github.com/adotmorrall/LIRI-Node-App#readme",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "dotenv": "^8.2.0",
+    "node-spotify-api": "^1.1.1"
+  }
 }
