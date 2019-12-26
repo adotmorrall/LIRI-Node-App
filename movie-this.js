@@ -5,13 +5,14 @@ var queryURL = 'http://www.omdbapi.com/?t=' + movie + '&y=&plot=short&apikey=tri
 axios.get(queryURL)
     .then(function (response) {
         var omdbInfo = response.data
-        console.log(omdbInfo);
-        console.log('Title: ');
-        console.log('Year: ');
-        console.log('Rated: ');
-        console.log('IMDB Rating: ');
-        console.log('Country: ');
-        console.log('Language: ');
-        console.log('Plot: ');
-        console.log('Actors: ');
+        // console.log(omdbInfo);
+        console.log('                                               ');
+        console.log('Title: ' + omdbInfo.Title);
+        console.log('Year: ' + omdbInfo.Year);
+        console.log('Rated: ' + omdbInfo.Rated);
+        console.log('IMDB Rating: ' + omdbInfo.Ratings.imdbRating);
+        console.log('Country: ' + omdbInfo.Country);
+        console.log('Language: ' + omdbInfo.Language);
+        console.log('Plot: ' + omdbInfo.Plot);
+        console.log('Actors: ' + omdbInfo.Actors);
     })
