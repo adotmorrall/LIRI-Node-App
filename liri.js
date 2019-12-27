@@ -67,15 +67,18 @@ function getMovie() {
                 console.log('Rotten Tomatoes Rating: ' + omdbInfo.Ratings[1].Value);
                 console.log('Country: ' + omdbInfo.Country);
                 console.log('Language: ' + omdbInfo.Language);
-                console.log('Actors: ' + omdbInfo.Actors);
                 console.log('Plot: ' + omdbInfo.Plot);
+                console.log('Actors: ' + omdbInfo.Actors);
             });
 };
 
 // concert-this command
 function getArtist() {
     var band = userInput;
-    axios.get('https://rest.bandsintown.com/artists/' + (band || 'U2') + '/events?app_id=codingbootcamp')
+    if (!band) {
+        band = 'the strokes'
+    }
+    axios.get('https://rest.bandsintown.com/artists/' + band + '/events?app_id=codingbootcamp')
         .then(function (response) {
 
             var output = response.data;
@@ -117,13 +120,13 @@ function doWhatItSays() {
             return console.log(error);
         }
         // We will then print the contents of data
-        console.log(data);
+        // console.log(data);
 
         // Then split it by commas (to make it more readable)
         var dataArr = data.split(',');
 
         // We will then re-display the content as an array for later use.
-        console.log(dataArr);
+        // console.log(dataArr);
 
         // Make the code run by putting the split data into my arguments for the userQuery function
         liriCall = dataArr[0];
