@@ -13,7 +13,7 @@ LIRI is a command line node application. To retrieve the data that will power th
 
 1. Refer to the [Spotify](https://developer.spotify.com/documentation/web-api/quick-start/), [OMDb](http://www.omdbapi.com/apikey.aspx), and [Bands In Town](https://www.artists.bandsintown.com/support/api-installation) web pages to obtain a web API key to use LIRI.
 
-2. Clone this repository [LIRI-Node-App](git@github.com:adotmorrall/LIRI-Node-App.git)
+2. Clone this repository [LIRI-Node-App](https://github.com/adotmorrall/LIRI-Node-App.git)
 
     **Important:** Once you get your Spotify API key, create a file named ```.env```.
 
